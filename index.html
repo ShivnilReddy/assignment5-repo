@@ -8,41 +8,74 @@
 </head>
 <body>
     <svg width="100%" height="300" version="1.1"
-     xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="black" />
-        <circle cx="100%" cy="50%" r="150" fill="purple" stroke="black" fill-opacity="0.6" />
-        <rect x="5%" y="5%" width="20" height="20" transform="rotate(5)" />
-        <polygon points="500,100 640,300 800,100" fill="#B3B6B7" />
-        <text x="100" y="100" font-family="Arial" font-size="80" fill="purple" stroke="black" stroke-width="1"
-            transform="rotate(-1)">
-            THIS IS MY BANNER AGAIN
-        </text>
-        <g>
-            <path fill-opacity="0.1" stroke="lightgray" d="
-                M 440, 100
-                m -50, 0
-                a 50,50 0 1,0 100,0
-                a 50,50 0 1,0 -100,0
-            " />
-            ` <circle r="5" fill="purple">
-                <animateMotion dur="10s" repeatCount="indefinite" path=" M 440, 100
-                    m -50, 0
-                    a 50,50 0 1,0 100,0
-                    a 50,50 0 1,0 -100,0" />
-            </circle>
-        </g>
-    </svg>
-    <nav class=""menu">
+        xmins="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="black" />
+    <circle cx="100%" cy="50%" r="150" fill="purple" stroke="black" fill-opacity="0.6" />
+    <rect x="5%" y="5%" width="20" height="20" transform="rotate(5)" />
+    <polygon points="500,100 640,300 800,100" fill="#B3B6B7" />
+    <text x="25" y="100" font family="Arial" font-size="50" fill="white" stroke="black" stroke-width="1" transform="rotate(-1)">
+        It's a bird, it's a plane...IT'S MY BANNER!
+    </text>
+    <g>
+    <path fill-opacity="0.1" stroke="white" d="
+        M 640,175 
+        m -50, 0 
+        a 50,50 0 1,0 100,0 
+        a 50,50 0 1,0 -100,0"/>
+        <circle r="5" fill="red">
+            <animateMotion dur="5s" repeatCount="indefinite" path=" 
+                M 640, 175 
+                m -50, 0 
+                a 50,50 0 1,0 100,0 
+                a 50,50 0 0,1 -100,0"/>
+        </circle>
+        <circle r="5" fill="navy">      
+             <animateMotion dur="5s" repeatCount="indefinite" path=" 
+                M 640, 175 
+                m -50, 0 
+                a 50,50 0 0,1 100,0 
+                a 50,50 0 1,0 -100,0"/>
+        </circle>
+   </g>
+ </svg>
+    <nav class="menu">
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./views/two.html">Page Two</a></li>
             <li><a href="./views/three.html">Page Three</a></li>
         </ul>
     </nav>
+
     <h1>Assignment 5</h1>
     <h2 class="css-question">How to Apply CSS to HTML</h2>
-    <p class="css-question">To include an external CSS file, use the <code>&lt;link rel="stylesheet" href="path/to/style.css"&gt;</code>tag in the <code>&lt;<head>&gt;</code>of your HTML document.</p>
+    <p class="css-question">An external stylesheet contains CSS in a separate file with a .css extension. 
+        This is the most common and useful method of bringing CSS to a document. 
+        You can link a single CSS file to multiple web pages, styling all of them with the same CSS stylesheet. 
+        In the Getting started with CSS, we linked an external stylesheet to our web page.
+
+        You reference an external CSS stylesheet from an HTML <code>&lt;link&gt;</code> element:
+        
+        <pre><code>&lt;!doctype html&gt;
+        &lt;html lang="en-GB"&gt;
+          &lt;head&gt;
+            &lt;meta charset="utf-8" /&gt;
+            &lt;title&gt;My CSS experiment&lt;/title&gt;
+            &lt;link rel="stylesheet" href="styles.css" /&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;Hello World!&lt;!/h1&gt;
+            &lt;p&gt;This is my first CSS example&lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html></code></pre>
+    </p>
     <h2 class="js-question">How to Use JavaScript in a Webpage</h2>
-    <p class="js-question">Link to an external JavaScript file using <code>&lt;script src="path/to/script.js"&gt;&lt;/script&gt;</code> at the end of your HTML document, before the closing<code>&lt;/body&gt;</code> tag. Alternatively, you can include JavaScript directly within HTML<code>&lt;script&gt;</code>tags.</p>
+    <p class="js-question">You may also add JavaScript code between <code>&lt;script&gt;</code> 
+        tags rather than providing an src attribute.
+        <pre><code>&lt;script&gt;
+            window.addEventListener("load", () => {
+              console.log("This function is executed once the page is fully loaded");
+            });
+          &lt;/script&gt;</code></pre>
+    </p>
 </body>
 </html>

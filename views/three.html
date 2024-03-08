@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="icon" href="./resources/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <svg width="100%" height="300" version="1.1"
+        xmins="http://www.w3.org/2000/svg">
+    <rect width="100%" height="100%" fill="black" />
+    <circle cx="100%" cy="50%" r="150" fill="purple" stroke="black" fill-opacity="0.6" />
+    <rect x="5%" y="5%" width="20" height="20" transform="rotate(5)" />
+    <polygon points="500,100 640,300 800,100" fill="#B3B6B7" />
+    <text x="25" y="100" font family="Arial" font-size="50" fill="white" stroke="black" stroke-width="1" transform="rotate(-1)">
+        Well, what do we have here...IT'S MY BANNER AGAIN
+    </text>
+    <g>
+    <path fill-opacity="0.1" stroke="white" d="
+        M 640,175 
+        m -50, 0 
+        a 50,50 0 1,0 100,0 
+        a 50,50 0 1,0 -100,0"/>
+        <circle r="5" fill="lightblue">
+            <animateMotion dur="5s" repeatCount="indefinite" path=" 
+                M 640, 175 
+                m -50, 0 
+                a 50,50 0 1,0 100,0 
+                a 50,50 0 0,1 -100,0"/>
+        </circle>
+        <circle r="5" fill="pink">      
+             <animateMotion dur="5s" repeatCount="indefinite" path=" 
+                M 640, 175 
+                m -50, 0 
+                a 50,50 0 0,1 100,0 
+                a 50,50 0 1,0 -100,0"/>
+        </circle>
+   </g>
+ </svg>
+ <nav class="menu">
+   <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./views.two.html">Page Two</a></li>
+        <li><a href="./views.three.html>">Page Three</a></li>
+   </ul>
+ </nav>
+ <h1>SVG Animation is easy!</h1>
+ <img src="../resource/page-three.svg" alt="Red dot going around perimeter of square box" />
+ 
+ </body>
+</html>
